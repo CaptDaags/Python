@@ -1,0 +1,220 @@
+# Code examples from online Python course
+
+# Assigning values to variables 
+some_variable = 3
+
+some_variable = True
+some_variable = False
+
+#Strings
+some_variable = 'Test 123'
+name = "Ryan" age = "19" food = "cheese"
+
+#Comments
+# This is a single line comment
+
+"""" This is
+a multi line
+comment
+"""
+
+#Exponential
+spam = 3 % 2
+
+# Access By Index
+
+fifth_letter = "MONTY"[4]
+print fifth_letter
+
+# String Methods
+
+parrot = "Norwegian Blue"
+print len(parrot)
+14
+
+parrot = "Norwegian Blue"
+print parrot.lower()
+norwegian blue
+
+parrot = "norwegian blue"
+print parrot.upper()
+
+# Dot Notation - Only Works With Strings
+
+lion = "roar"
+len(lion)
+lion.upper()
+
+# String Concatenation
+
+print "Life " + "of " + "Brian"
+
+# Explicit String Conversion
+
+print "I have " + str(2) + " coconuts!"
+
+# String Formatting With #
+
+name = "Mike" 
+print "Hello %s" % (name)
+
+string_1 = "Camelot"
+string_2 = "place"
+print "Let's not go to %s. 'Tis a silly %s." % (string_1, string_2)
+
+# Date And Time Library
+
+from datetime import datetime
+now = datetime.now()
+print now
+
+# Return Components of datetime.now()
+
+current_year = now.year
+current_month = now.month
+current_day = now.day
+
+print now.year
+print now.month
+print now.day
+
+from datetime import datetime
+now = datetime.now()
+print '%s/%s/%s' % (now.month,now.day, now.year)
+
+from datetime import datetime
+now = datetime.now()
+print '%s/%s/%s %s:%s:%s' % (now.month, now.day, now.year,now.hour,now.minute, now.second)
+
+# Conditionals And Control Flow
+
+def using_control_once():
+if 1 == 1:
+return "Success #1"
+
+def using_control_again():
+if 2 == 2:
+return "Success #2"
+
+print using_control_once()
+print using_control_again()
+
+if 8 > 9:
+	print "I don't get printed!"
+elif 8 < 9:
+	print "I get printed!"
+else:
+	print "I also don't get printed!"
+	
+def the_flying_circus():
+if 3 > 1 and 2 > 1:
+the_flying_circus = True
+elif 1 == 1:
+the_flying_circus = True
+else:
+the_flying_circus = True
+return the_flying_circus
+
+word = raw_input("What is the word?")
+if len(word) > 0 and word.isalpha():
+firstletter = word[0]
+print firstletter
+# word = word [1:] This chops off the first letter in the string
+translation = word + firstletter + "ay"
+print translation
+else:
+print "Not a word"
+
+# Functions
+
+def tax(bill):
+"""Adds 8% tax to a restaurant bill."""
+bill *= 1.08
+print "With tax: %f" % bill
+return bill
+
+def tip(bill):
+"""Adds 15% tip to a restaurant bill."""
+bill *= 1.15
+print "With tip: %f" % bill
+return bill
+
+meal_cost = 100
+meal_with_tax = tax(meal_cost)
+meal_with_tip = tip(meal_with_tax)
+
+# Python Lists And Dictionaries
+
+zoo_animals = ["pangolin", "cassowary", "sloth", "goat" ];
+if len(zoo_animals) > 3:
+print "The first animal at the zoo is the " + zoo_animals[0]
+print "The second animal at the zoo is the " + zoo_animals[1]
+print "The third animal at the zoo is the " + zoo_animals[2]
+print "The fourth animal at the zoo is the " + zoo_animals[3]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
