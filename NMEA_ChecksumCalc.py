@@ -1,7 +1,8 @@
 # Test the regex and checksum builder for the NMEA spammer project
-# Most of this goodness came from http://doschman.blogspot.com.au/2013/01/calculating-nmea-sentence-checksums.html
+# Most of this goodness came from
+# http://doschman.blogspot.com.au/2013/01/calculating-nmea-sentence-checksums.html
 
-# Import the regeular expression (re) device that is used to strip $ * and CR LF:
+# Import the regular expression (re) device that is used to strip $ * and CR LF:
 import re
 # This is the string that we'll be testing:
 sentence = "$GPGLL,3756.50,S,14500.06,E,221155,A,*1D\r\n"
